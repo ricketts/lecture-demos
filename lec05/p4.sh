@@ -1,1 +1,1 @@
-sed -n 255,298p frankenstein.txt | tr '[:space:]' '[\n*]' | tr -d '[:punct:]' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -nr | head -10
+sed -n 255,298p frankenstein.txt | tr '[:upper:]' '[:lower:]' | tr '[:space:]' '\n'|grep -v '^$' | tr -d '[:punct:]' | sort | uniq -c | sort -nr |head -10
