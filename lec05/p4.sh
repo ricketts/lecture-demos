@@ -1,0 +1,1 @@
+sed -n 255,298p frankenstein.txt | tr '[:space:]' '[\n*]' | tr -d '[:punct:]' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -nr | head -10

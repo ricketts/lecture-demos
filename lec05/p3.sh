@@ -1,0 +1,1 @@
+cat frankenstein.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep 'monster' | sort | uniq -c | head -1 
